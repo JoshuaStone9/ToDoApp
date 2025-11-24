@@ -25,8 +25,10 @@ while (menuActive)
     Console.WriteLine("=================================");
     Console.WriteLine("**ITEM MANAGEMENT**");
     Console.WriteLine("=================================");
-    Console.WriteLine("6. Delete item by Title");
-    Console.WriteLine("7. Exit");
+    Console.WriteLine("6. Mark Items Completed");
+    Console.WriteLine("7. Edit items");
+    Console.WriteLine("8. Delete item by Title");
+    Console.WriteLine("9. Exit");
     Console.WriteLine("=================================");
     Console.WriteLine("Enter your choice: ");
     string? choice = Console.ReadLine();
@@ -66,8 +68,60 @@ while (menuActive)
             foreach (var item in todoList.GetOverdue(now))
                 Console.WriteLine($"- {item.Title}");
             break;
-
+        
         case "6":
+            Console.WriteLine("Enter the title of the item to mark as completed:");
+            var completeTitle = Console.ReadLine();
+
+            var itemToComplete = todoList.GetAll()
+                .FirstOrDefault(i => 
+                    i.Title.Equals(completeTitle, StringComparison.OrdinalIgnoreCase));
+
+            if (itemToComplete != null)
+            {
+                itemToComplete.MarkComplete();
+                Console.WriteLine("------Item marked as completed------");
+            }
+            else
+            {
+                Console.WriteLine("Item not found.");
+            }
+            break;
+
+        case "7":
+            Console.WriteLine("Enter the title of the item to edit:");
+            var editTitle = Console.ReadLine();
+
+            var itemToEdit = todoList.GetAll()
+                .FirstOrDefault(i =>
+                    i.Title.Equals(editTitle, StringComparison.OrdinalIgnoreCase));
+
+            if (itemToEdit != null)
+            {
+                Console.WriteLine("Enter the new title (leave empty to keep current):");
+                var newTitle = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(newTitle))
+                {
+                    var prop = itemToEdit.GetType().GetProperty("Title", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic);
+                    var setMethod = prop?.GetSetMethod(true);
+                    if (setMethod != null)
+                    {
+                        setMethod.Invoke(itemToEdit, new object?[] { newTitle });
+                    }
+                    else
+                    {
+                        Console.WriteLine("Unable to update Title: setter is not accessible.");
+                    }
+                }
+                Console.WriteLine("------Item updated successfully------");
+            }
+            else
+            {
+                Console.WriteLine("Item not found.");
+            }
+            break;
+
+        case "8":
             Console.WriteLine("Enter the title of the item to delete:");
             var deleteTitle = Console.ReadLine();
 
@@ -86,7 +140,7 @@ while (menuActive)
             }
             break;
 
-        case "7":
+        case "9":
             Console.WriteLine("Exiting...");
             menuActive = false;
             break;

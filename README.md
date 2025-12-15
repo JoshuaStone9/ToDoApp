@@ -7,7 +7,6 @@ A small C# console app that helps you manage personal tasks from the terminal. E
 - [High-Level Architecture](#high-level-architecture)
 - [Data Model](#data-model)
 - [Control Flow](#control-flow)
-- [Plaid API Integration](#plaid-api-integration)
 - [Local Persistence (todos.txt)](#local-persistence-todostxt)
 - [Configuration & Environment](#configuration--environment)
 - [How to Run](#how-to-run)
@@ -105,7 +104,7 @@ The current implementation does not persist data to disk—items vanish once the
 - Rewrite the file on any mutation to keep things atomic.
 
 ## Configuration & Environment
-No environment variables are required. Running `dotnet run` inside `src/TodoApp` is enough because everything stays in memory. If you later introduce Plaid or another integration, a `.env` file would be the right place to stash secrets (`PLAID_CLIENT_ID`, `PLAID_SECRET`, etc.).
+No environment variables are required. Running `dotnet run` inside `src/TodoApp` is enough because everything stays in memory.
 
 ## How to Run
 

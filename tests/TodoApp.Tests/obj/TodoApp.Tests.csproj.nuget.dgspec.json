@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/joshstone/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj": {}
+    "/Users/joshstone/Documents/GitHub/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj": {}
   },
   "projects": {
-    "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj": {
+    "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj",
+        "projectUniqueName": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj",
+        "projectPath": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj",
         "packagesPath": "/Users/joshstone/.nuget/packages/",
-        "outputPath": "/Users/joshstone/ToDoApp/src/TodoApp/obj/",
+        "outputPath": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joshstone/.nuget/NuGet/NuGet.Config"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "/Users/joshstone/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj": {
+    "/Users/joshstone/Documents/GitHub/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joshstone/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj",
+        "projectUniqueName": "/Users/joshstone/Documents/GitHub/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj",
         "projectName": "TodoApp.Tests",
-        "projectPath": "/Users/joshstone/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj",
+        "projectPath": "/Users/joshstone/Documents/GitHub/ToDoApp/tests/TodoApp.Tests/TodoApp.Tests.csproj",
         "packagesPath": "/Users/joshstone/.nuget/packages/",
-        "outputPath": "/Users/joshstone/ToDoApp/tests/TodoApp.Tests/obj/",
+        "outputPath": "/Users/joshstone/Documents/GitHub/ToDoApp/tests/TodoApp.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joshstone/.nuget/NuGet/NuGet.Config"
@@ -87,8 +87,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj": {
-                "projectPath": "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj"
+              "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj": {
+                "projectPath": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj"
               }
             }
           }

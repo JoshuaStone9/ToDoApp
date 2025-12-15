@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj": {}
+    "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj": {}
   },
   "projects": {
-    "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj": {
+    "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj",
+        "projectUniqueName": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "/Users/joshstone/ToDoApp/src/TodoApp/TodoApp.csproj",
+        "projectPath": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/TodoApp.csproj",
         "packagesPath": "/Users/joshstone/.nuget/packages/",
-        "outputPath": "/Users/joshstone/ToDoApp/src/TodoApp/obj/",
+        "outputPath": "/Users/joshstone/Documents/GitHub/ToDoApp/src/TodoApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joshstone/.nuget/NuGet/NuGet.Config"
